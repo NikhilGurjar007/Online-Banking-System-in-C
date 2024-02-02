@@ -1,15 +1,17 @@
-# Online-Banking-System-in-C
-Functions in the Bank Management System
-The source code for the Bank Management System for Customer Accounts is reasonably short and simple to comprehend. This C mini project is separated into many functions, most of which are connected to various financial operations. Some of the most critical functionalities are listed below to assist you better understand the project.
+Banking Account System in C using File handling
+With the help of file handling, we can create a local banking account system on our computer which can have functionality like account opening, account login, transaction etc.
 
-menu() – This function shows a menu or welcome screen that allows you to execute the various banking tasks listed below.
-new acc() – Creates a new customer account using this function. It requests the customer's name, date of birth, citizenship number, address, and phone number, among other personal and financial information. You may pick from a variety of deposit accounts, including savings, current, fixed for 1 year, fixed for 2 years, and fixed for 3 years.
-view list() – Displays a list of items. This feature allows you to access the customer's banking information, including the account number, name, address, and phone number supplied when the account was created.
-edit() – This method has been used to update the address and phone number associated with a specific customer account.
-transact() — This method allows you to deposit and withdraw funds from a specific client account.
-remove() – A client account may be deleted using this service.
-see() is a function that allows you to look at something. Account number, name, date of birth, citizenship number, age, address, phone number, kind of account, amount deposited, and date of deposit are all shown in this feature. It also shows the amount of interest earned on a certain account type.
-File handling has been employed for practically all functionalities in this C bank management system project. The file has been used to hold data pertaining to new accounts, transactions, account editing, and account viewing. For the menu, interest calculation, and password, I haven't utilized file handling.
+In the main function, we will have all the features that based on user input. We will call different functions from the main functions.
 
-Conclusion
-After finishing the Bank Management System project using the C programming language, it is clear that this system is a useful tool for managing the transactions and operations of a bank. Users can do many things with the system, like set up accounts, deposit and withdraw money, and check their account balances. This project shows how powerful and flexible the C language is, as well as how it can handle complicated tasks in a clear and efficient way. Overall, putting the Bank Management System into place using C was a success, and it is expected to be a useful tool for managing how a bank works.
+Here, we implement four functions majorly:
+
+AccountCreation()
+This function will take user details as the input, and it will create a new account for the user with the proper username and password.
+We will create a structure data type to store all the details, and then we will store these details into a text file which will be named by the username.
+CheckBalance()
+This function will be used to check current of money in the account which is logged in. We will check all the files, and for the file which will match the user name and password, we will display its bank account balance.
+SendMoney()
+This function will be used to send money from one account to another account.
+With the help of file handling, we will open the file of the user to whom we want to send the money to and then we will write the amount of money, and we will subtract the amount of money from the sender's file.
+LogIn()
+This function will be used to log in to the account with a username and password that already exists. For this feature, we will open all the files and search for the user name that exists entered by the user, and if the password is correct, then we will be logged into that account.
